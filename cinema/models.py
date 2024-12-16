@@ -39,7 +39,6 @@ class Actor(models.Model):
         return f"{self.first_name} {self.last_name}"
 
 
-
 def movie_image_file_path(instance, filename):
     filename = (
         f"{slugify(instance.title)}-{uuid.uuid4()}"
